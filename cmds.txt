@@ -1,0 +1,155 @@
+Microsoft Windows [Version 10.0.22000.2538]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\student>d:
+
+D:\>mkdir 22cdr010
+
+D:\>mkdir 22cdr010
+A subdirectory or file 22cdr010 already exists.
+
+D:\>cd 22cdr010
+
+D:\22cdr010>git init
+Initialized empty Git repository in D:/22cdr010/.git/
+
+D:\22cdr010>notepad file1.txt
+
+D:\22cdr010>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\22cdr010>git add file1.txt
+
+D:\22cdr010>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+
+
+D:\22cdr010>git commit -m "first commit"
+[master (root-commit) a65ed73] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+
+D:\22cdr010>git branch -M main
+
+D:\22cdr010>git remote add origin https://github.com/avi11204/22cdr010.git
+
+D:\22cdr010>git push -u origin main
+remote: Permission to avi11204/22cdr010.git denied to raghavmk76.
+fatal: unable to access 'https://github.com/avi11204/22cdr010.git/': The requested URL returned error: 403
+
+D:\22cdr010>git config --global user.name "avi11204"
+
+D:\22cdr010>git config --global user.email "avanthikha11204@gmail.com"
+
+D:\22cdr010>git config --global user.name
+avi11204
+
+D:\22cdr010>git config --global user.email
+avanthikha11204@gmail.com
+
+D:\22cdr010>git remote -v
+origin  https://github.com/avi11204/22cdr010.git (fetch)
+origin  https://github.com/avi11204/22cdr010.git (push)
+
+D:\22cdr010>git push -u origin main
+remote: Permission to avi11204/22cdr010.git denied to raghavmk76.
+fatal: unable to access 'https://github.com/avi11204/22cdr010.git/': The requested URL returned error: 403
+
+D:\22cdr010>
+D:\22cdr010>git remote set-url origin https://github.com/YourNewUsername/22cdr010.git
+
+D:\22cdr010>
+D:\22cdr010>git push -u origin main
+remote: Repository not found.
+fatal: repository 'https://github.com/YourNewUsername/22cdr010.git/' not found
+
+D:\22cdr010>
+D:\22cdr010>git remote set-url origin https://github.com/avi11204/22cdr010.git
+
+D:\22cdr010>git push -u origin main
+remote: Permission to avi11204/22cdr010.git denied to raghavmk76.
+fatal: unable to access 'https://github.com/avi11204/22cdr010.git/': The requested URL returned error: 403
+
+D:\22cdr010>git push -u origin main
+fatal: User canceled device code authentication
+Password for 'https://%1B%5BA@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/avi11204/22cdr010.git/'
+
+D:\22cdr010>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 216 bytes | 216.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/avi11204/22cdr010.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\22cdr010>git checkout -b b1
+Switched to a new branch 'b1'
+
+D:\22cdr010>notepad file2.txt
+
+D:\22cdr010>git add file2.txt
+
+D:\22cdr010>git status
+On branch b1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file2.txt
+
+
+D:\22cdr010>git commit -m "second commit"
+[b1 61f3c23] second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file2.txt
+
+D:\22cdr010>git push -u origin b1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'b1' on GitHub by visiting:
+remote:      https://github.com/avi11204/22cdr010/pull/new/b1
+remote:
+To https://github.com/avi11204/22cdr010.git
+ * [new branch]      b1 -> b1
+branch 'b1' set up to track 'origin/b1'.
+
+D:\22cdr010>git checkout -b b2
+Switched to a new branch 'b2'
+
+D:\22cdr010>notepad file3.txt
+
+D:\22cdr010>git add file3.txt
+
+D:\22cdr010>git push -u origin b2
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'b2' on GitHub by visiting:
+remote:      https://github.com/avi11204/22cdr010/pull/new/b2
+remote:
+To https://github.com/avi11204/22cdr010.git
+ * [new branch]      b2 -> b2
+branch 'b2' set up to track 'origin/b2'.
+
+D:\22cdr010>
